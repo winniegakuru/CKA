@@ -12,11 +12,22 @@
  ```
  #### Install ETCD
  1. Download Binaries
- `curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcdv3.3.11-linux-amd64.tar.gz -o etcd-v3.3.11-linux-amd64.tar.gz`
+ ```
+ wget -q --https-only \
+"https://github.com/coreos/etcd/releases/download/v3.3.9/etcd-v3.3.9-linux-amd64.tar.gz"
+ ```
  
  2. Extract 
- `curl -L https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcdv3.3.11-linux-amd64.tar.gz -o etcd-v3.3.11-linux-amd64.tar.gz`
+ ```
+  tar xzvf etcd-v3.3.9-linux-amd64.tar.gz
+ ```
  
  3. Run ETCD service
  `./etcd`
  
+###### Use `etcdctl` to run ETCD commands
+```
+./etcdctl set key1 value1
+./etcdctl set key1 value1
+./etcdctl
+```
