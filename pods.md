@@ -6,10 +6,12 @@
 `kubectl run nginx --image=nginx`
 
 #### Create a pod using command dry run to a file:
-`kubectl run nginx --image=nginx --dry-run=client`
-`kubectl run nginx --image=nginx --dry-run=client -o yaml`
-`kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-po.yaml`
-`kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml`
+```
+kubectl run nginx --image=nginx --dry-run=client
+kubectl run nginx --image=nginx --dry-run=client -o yaml
+kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-po.yaml
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml
+```
 
 #### List all Pods:
 `k get po`
