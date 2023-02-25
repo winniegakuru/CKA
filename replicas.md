@@ -36,4 +36,5 @@ k delete rs new-rs
 k replace -f rs.yaml # - to update the replicaset
 k scale -replicas=6 -f rs.yaml
 kubectl scale rs new-replica-set --replicas=2
+k get all
 ```
