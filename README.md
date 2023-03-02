@@ -1,8 +1,17 @@
 # CKA
 
+```
+kubectl create -f . # To create/apply multiple yaml files
+   
+```
+### Rollout and Rollback
+`kubectl rollout status nginx-deployment`
+`kubectl rollout history nginx-deployment`
+`kubectl rollout undo nginx-deployment`
+
 ### ETCD
 - it is a distributed reliable key- value store that is simple, secure and fast.
- ##### Exampple
+ ##### Example
  ```
     {
       "Name":"Winnie Gakuru",
