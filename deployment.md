@@ -43,15 +43,12 @@ Use the above two in combination to generate a resource definition file quickly,
 Create an NGINX Pod
 
 `kubectl run nginx --image=nginx`
-
-
-
+`k edit deployments.apps frontend`
 Generate POD Manifest YAML file (-o yaml). Don't create it(--dry-run)
 
 `kubectl run nginx --image=nginx --dry-run=client -o yaml`
 
-
-
+`k set image deployment/frontend simple-webapp=kodekloud/webapp-color:v2`
 #### Deployment
 Create a deployment
 
